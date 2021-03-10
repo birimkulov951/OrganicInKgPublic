@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.organicinkgpublic">
+    package="com.example.organicinkgandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,13 +17,13 @@
         android:theme="@style/AppTheme"
         tools:targetApi="m">
         <activity
-            android:name="com.example.organicinkgpublic.MainActivity"
+            android:name="com.example.organicinkgandroid.MainActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:windowSoftInputMode="adjustResize">
 
         </activity>
         <activity
-            android:name="com.example.organicinkgpublic.SplashActivity"
+            android:name="com.example.organicinkgandroid.SplashActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:windowSoftInputMode="adjustResize"
             android:theme="@style/SplashTheme">

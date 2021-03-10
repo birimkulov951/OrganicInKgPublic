@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/authorizationFragment"
-        android:name="com.example.organicinkgpublic.ui.auth.AuthorizationFragment"
+        android:name="com.example.organicinkgandroid.ui.auth.AuthorizationFragment"
         android:label="fragment_authorization"
         tools:layout="@layout/fragment_authorization"
         >
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/codeAuthorizationFragment"
-        android:name="com.example.organicinkgpublic.ui.auth.CodeAuthorizationFragment"
+        android:name="com.example.organicinkgandroid.ui.auth.CodeAuthorizationFragment"
         android:label="fragment_code_authorization"
         tools:layout="@layout/fragment_code_authorization" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/registrationFragment"
-        android:name="com.example.organicinkgpublic.ui.auth.RegistrationFragment"
+        android:name="com.example.organicinkgandroid.ui.auth.RegistrationFragment"
         android:label="fragment_registration"
         tools:layout="@layout/fragment_registration" >
         <action
@@ -73,7 +73,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.organicinkgpublic.ui.HomeFragment"
+        android:name="com.example.organicinkgandroid.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -107,7 +107,7 @@
     </fragment>
     <fragment
         android:id="@+id/categoriesFragment"
-        android:name="com.example.organicinkgpublic.ui.CategoriesFragment"
+        android:name="com.example.organicinkgandroid.ui.CategoriesFragment"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" >
         <action
@@ -134,7 +134,7 @@
     </fragment>
     <fragment
         android:id="@+id/basketFragment"
-        android:name="com.example.organicinkgpublic.ui.BasketFragment"
+        android:name="com.example.organicinkgandroid.ui.BasketFragment"
         android:label="fragment_basket"
         tools:layout="@layout/fragment_basket" >
         <action
@@ -163,7 +163,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.ProfileFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -222,7 +222,7 @@
 
     <fragment
         android:id="@+id/profileSettingsFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.ProfileSettingsFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.ProfileSettingsFragment"
         android:label="fragment_profile_settings"
         tools:layout="@layout/fragment_profile_settings" >
         <action
@@ -236,7 +236,7 @@
 
     <fragment
         android:id="@+id/currentOrdersFilledFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.PendingOrdersFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.PendingOrdersFragment"
         android:label="fragment_current_orders_filled"
         tools:layout="@layout/fragment_pending_orders" >
         <action
@@ -246,7 +246,7 @@
 
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.ClosedOrdersFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.ClosedOrdersFragment"
         android:label="fragment_history_filled"
         tools:layout="@layout/fragment_closed_orders" >
         <action
@@ -258,32 +258,32 @@
     </fragment>
     <fragment
         android:id="@+id/faqFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.FaqFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.FaqFragment"
         android:label="fragment_faq"
         tools:layout="@layout/fragment_faq" />
     <fragment
         android:id="@+id/contactsFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.ContactsFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.ContactsFragment"
         android:label="fragment_contacts"
         tools:layout="@layout/fragment_contacts" />
     <fragment
         android:id="@+id/aboutUsFragment"
-        android:name="com.example.organicinkgpublic.ui.profile.AboutUsFragment"
+        android:name="com.example.organicinkgandroid.ui.profile.AboutUsFragment"
         android:label="fragment_about_us"
         tools:layout="@layout/fragment_about_us" />
     <fragment
         android:id="@+id/feedbackFragment"
-        android:name="com.example.organicinkgpublic.ui.FeedbackFragment"
+        android:name="com.example.organicinkgandroid.ui.FeedbackFragment"
         android:label="fragment_feedback"
         tools:layout="@layout/fragment_feedback" />
     <fragment
         android:id="@+id/categoriesSubFragment"
-        android:name="com.example.organicinkgpublic.ui.CategoriesSubFragment"
+        android:name="com.example.organicinkgandroid.ui.CategoriesSubFragment"
         android:label="fragment_categories_sub"
         tools:layout="@layout/fragment_categories_sub" />
     <fragment
         android:id="@+id/orderFragment"
-        android:name="com.example.organicinkgpublic.ui.order.OrderFragment"
+        android:name="com.example.organicinkgandroid.ui.order.OrderFragment"
         android:label="fragment_order"
         tools:layout="@layout/fragment_order" >
         <action
@@ -310,7 +310,7 @@
     </fragment>
     <fragment
         android:id="@+id/shipmentMethodFragment"
-        android:name="com.example.organicinkgpublic.ui.order.ShipmentMethodFragment"
+        android:name="com.example.organicinkgandroid.ui.order.ShipmentMethodFragment"
         android:label="fragment_shipment_method"
         tools:layout="@layout/fragment_shipment_method" >
         <action
@@ -323,7 +323,7 @@
     </fragment>
     <fragment
         android:id="@+id/paymentMethodFragment"
-        android:name="com.example.organicinkgpublic.ui.order.PaymentMethodFragment"
+        android:name="com.example.organicinkgandroid.ui.order.PaymentMethodFragment"
         android:label="fragment_payment_method"
         tools:layout="@layout/fragment_payment_method" >
         <action
@@ -336,7 +336,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderPaymentFragment"
-        android:name="com.example.organicinkgpublic.ui.order.OrderPaymentFragment"
+        android:name="com.example.organicinkgandroid.ui.order.OrderPaymentFragment"
         android:label="fragment_order_payment"
         tools:layout="@layout/fragment_order_payment" >
         <action
@@ -348,7 +348,7 @@
     </fragment>
     <fragment
         android:id="@+id/contactInfoFragment"
-        android:name="com.example.organicinkgpublic.ui.order.ContactInfoFragment"
+        android:name="com.example.organicinkgandroid.ui.order.ContactInfoFragment"
         android:label="fragment_contact_info"
         tools:layout="@layout/fragment_contact_info" >
         <action
@@ -368,7 +368,7 @@
     </fragment>
     <fragment
         android:id="@+id/singleProductFragment"
-        android:name="com.example.organicinkgpublic.ui.ProductInfoFragment"
+        android:name="com.example.organicinkgandroid.ui.ProductInfoFragment"
         android:label="fragment_single_product"
         tools:layout="@layout/fragment_product_info" >
         <action
@@ -388,7 +388,7 @@
     </fragment>
     <fragment
         android:id="@+id/filterSettingsFragment"
-        android:name="com.example.organicinkgpublic.ui.filter.FilterSettingsFragment"
+        android:name="com.example.organicinkgandroid.ui.filter.FilterSettingsFragment"
         android:label="fragment_search_filter"
         tools:layout="@layout/fragment_filter_settings" >
         <action
@@ -420,7 +420,7 @@
     </fragment>
     <fragment
         android:id="@+id/locationFiltrationFragment"
-        android:name="com.example.organicinkgpublic.ui.filter.LocationFiltraterFragment"
+        android:name="com.example.organicinkgandroid.ui.filter.LocationFiltraterFragment"
         android:label="fragment_location_filter"
         tools:layout="@layout/fragment_location_filter" >
         <action
@@ -433,7 +433,7 @@
     </fragment>
     <fragment
         android:id="@+id/categoryFilterFragment"
-        android:name="com.example.organicinkgpublic.ui.filter.CategoryFilterFragment"
+        android:name="com.example.organicinkgandroid.ui.filter.CategoryFilterFragment"
         android:label="fragment_category_filter"
         tools:layout="@layout/fragment_category_filter" >
         <action
@@ -446,13 +446,13 @@
     </fragment>
     <fragment
         android:id="@+id/leaveFeedbackFragment"
-        android:name="com.example.organicinkgpublic.ui.LeaveFeedbackFragment"
+        android:name="com.example.organicinkgandroid.ui.LeaveFeedbackFragment"
         android:label="fragment_leave_feedback"
         tools:layout="@layout/fragment_leave_feedback" />
 
     <fragment
         android:id="@+id/searchResultFragment2"
-        android:name="com.example.organicinkgpublic.ui.SearchResultFragment"
+        android:name="com.example.organicinkgandroid.ui.SearchResultFragment"
         android:label="fragment_search_result"
         tools:layout="@layout/fragment_search_result" >
         <action
@@ -474,7 +474,7 @@
     </fragment>
     <fragment
         android:id="@+id/orderConfirmationFragment"
-        android:name="com.example.organicinkgpublic.ui.order.OrderInfoFragment"
+        android:name="com.example.organicinkgandroid.ui.order.OrderInfoFragment"
         android:label="fragment_order_confirmation"
         tools:layout="@layout/fragment_order_info" >
         <action
@@ -483,7 +483,7 @@
     </fragment>
     <fragment
         android:id="@+id/webViewFragment"
-        android:name="com.example.organicinkgpublic.ui.order.WebViewFragment"
+        android:name="com.example.organicinkgandroid.ui.order.WebViewFragment"
         android:label="WebViewFragment" >
         <action
             android:id="@+id/action_webViewFragment_to_orderConfirmationFragment"
@@ -495,7 +495,7 @@
     </fragment>
     <fragment
         android:id="@+id/summaryFragment"
-        android:name="com.example.organicinkgpublic.ui.order.SummaryFragment"
+        android:name="com.example.organicinkgandroid.ui.order.SummaryFragment"
         android:label="fragment_summary"
         tools:layout="@layout/fragment_summary" >
         <action
