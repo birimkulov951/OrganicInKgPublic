@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.FeedbackFragment">
+
+       <androidx.appcompat.widget.Toolbar
+           android:id="@+id/feedback_toolbar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="@dimen/layout_margin"
+           tools:ignore="MissingConstraints">
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/toolbar_back_button"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="@dimen/layout_margin"
+               android:src="@drawable/ic_back_button"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@id/toolbar_back_button"
+                   android:text="@string/feedbacks"
+                   android:layout_centerVertical="true"
+                   android:fontFamily="@font/open_sans_semibold"
+                   android:textColor="@color/colorBlack"
+                   android:textSize="18sp"/>
+           </RelativeLayout>
+
+       </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/feedback_toolbar"
+            android:layout_marginBottom="@dimen/layout_margin">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/feedback_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_margin"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_marginEnd="@dimen/layout_margin"
+                tools:listitem="@layout/feedback_list_item"
+                android:layout_marginTop="@dimen/margin_small"
+                />
+            <ProgressBar
+                android:id="@+id/feedback_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/feedback_fragment_is_empty_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/no_feedbacks"
+                android:textSize="14sp"
+                android:fontFamily="@font/open_sans"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:visibility="gone"
+               android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:id="@+id/button_leave_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/leave_feedback"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:textColor="@color/appTextGrayColor2"
+                android:layout_below="@id/feedback_recycler_view"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/layout_margin"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

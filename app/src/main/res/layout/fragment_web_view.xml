@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/web_view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/web_view_fragment_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundColor"
+                android:src="@drawable/ic_back_button"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/web_view_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elsom"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/web_view_fragment_back_btn"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/web_view_payment_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/done"
+                android:fontFamily="@font/open_sans_bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:paddingEnd="22dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/web_view_toolbar"/>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<vector android:height="30dp" android:tint="#8E8E8E"
+    android:viewportHeight="30" android:viewportWidth="30"
+    android:width="30dp" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <path android:fillColor="@android:color/white"
+        android:pathData="M15 7C16.38 7 17.51 8.13 17.51 9.51C17.51 10.89 16.38 12.03 15 12.03C13.62 12.03 12.49 10.9 12.49 9.52C12.49 8.14 13.62 7 15 7ZM15 4C11.97 4 9.5 6.47 9.5 9.51C9.5 12.55 11.97 15.02 15 15.02C18.03 15.02 20.5 12.55 20.5 9.51C20.5 6.47 18.03 4 15 4Z M25 25H22.01V24.52C22.01 21.71 19.73 19.43 16.94 19.43H13.06C10.26 19.43 7.99 21.71 7.99 24.52V25H5V24.52C5 20.06 8.62 16.43 13.06 16.43H16.93C21.38 16.43 24.99 20.06 24.99 24.52V25H25Z"/>
+
+</vector>

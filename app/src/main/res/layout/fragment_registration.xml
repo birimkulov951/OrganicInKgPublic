@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".ui.auth.RegistrationFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/registration_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back_button" />
+
+            <TextView
+                android:id="@+id/registration_login_option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="@string/login_2"
+                android:textColor="@color/appTextGrayColor"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/registration_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_registration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="@string/registration"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#000000"
+                    android:layout_marginTop="30dp"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/edit_text_registration_field_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginEnd="@dimen/layout_margin"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:background="@drawable/edit_text_frame_background"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:hint="@string/phone_number"
+                    android:text="+996"
+                    android:inputType="phone"
+                    android:textSize="15sp"
+                    android:nextFocusDown="@id/authorization_edit_text_field_password"
+                    android:imeOptions="actionDone"
+                    android:textColor="@color/colorPrimary"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_text_registration_field_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="@dimen/layout_margin"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginEnd="@dimen/layout_margin"
+                        android:background="@drawable/edit_text_frame_background"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:hint="@string/password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/registration_password_toggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_baseline_visibility_off_24"
+                        tools:ignore="MissingConstraints"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="30dp"/>
+
+                </RelativeLayout>
+
+                <RadioButton
+                    android:id="@+id/registration_radio_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/layout_margin"
+                    android:layout_marginEnd="@dimen/layout_margin"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/open_sans"
+                    android:paddingStart="@dimen/small"
+                    android:paddingEnd="@dimen/small"
+                    android:text="@string/i_agree_with"
+                    android:textColor="@color/appTextGrayColor"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/if_want_to_verify_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/if_want_to_verify_sms"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/registration_next_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_background"
+                    android:layout_gravity="center"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+                <LinearLayout
+                    android:id="@+id/registration_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:id="@+id/registration_warning_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_alert_20" />
+
+                    <TextView
+                        android:id="@+id/registration_warning_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/open_sans"
+                        android:text="@string/password_security_warning"
+                        android:textColor="@color/colorRed"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:ems="14"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

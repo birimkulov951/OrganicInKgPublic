@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--colorPrimaryDark is used only in status bar color-->
+    <color name="colorPrimary">#009B00</color>
+    <color name="colorPrimaryDark">#E5E5E5</color>
+    <color name="colorAccent">#007600</color>
+
+    <color name="backgroundColor">#E5E5E5</color>
+    <color name="appTextGrayColor">#8E8E8E</color>
+    <color name="appTextGrayColor2">#F2F2F2</color>
+    <color name="editTextSearchBackgroundColor">#DDDDDD</color>
+
+    <color name="colorOrange">#FF6800</color>
+    <color name="colorRed">#FF0303</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#F2F2F2</color>
+    <color name="colorDarkGreen">#0C3E11</color>
+
+</resources>

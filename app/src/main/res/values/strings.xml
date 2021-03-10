@@ -1,0 +1,239 @@
+<resources>
+    <string name="app_name">Organic in KG</string>
+
+    <!-- Fragment Names!!! -->
+    <string name="main_fragment">Главная</string>
+    <string name="categories_fragment">Категории</string>
+    <string name="basket_fragment">Корзина</string>
+    <string name="profile_fragment">Профиль</string>
+
+    <!-- Basket Fragment strings!!! -->
+    <string name="did_not_select_product">Чтобы продолжить выберите товар</string>
+    <string name="can_not_10_products_at_the_same_time">Выберите меньше десяти продуктов</string>
+    <string name="sure_to_delete_product">Вы действительно хотите удалить продукт из корзины?</string>
+    <string name="input_only_numbers">Пожалуйста, введите только числа.</string>
+    <string name="input_only_positive_numbers">Пожалуйста, введите только позитивные числа.</string>
+    <string name="please_login_to_order">Зарегистрируйтесь чтобы продолжить</string>
+    <string name="your_basket_is_empty">Ваша корзина пуста</string>
+    <string name="product_added_to_basket">Товар добавлен в корзину</string>
+    <string name="authorize_to_able_to_order">Перейти в раздел регистрации?</string>
+    <string name="go_to">Перейти </string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отменить</string>
+    <string name="with_same_currency">Пожалуйста, выберите товары в одной валюте</string>
+    <!-- Order Fragment strings!!! -->
+    <string name="order_fragment_name">Оформление заказа</string>
+    <string name="payment_method">Способ оплаты</string>
+    <string name="select_payment_method">Выберите способ оплаты</string>
+    <string name="shipment_method">Способ доставки</string>
+    <string name="select_shipment_method">Выберите способ доставки</string>
+    <string name="desired_date">Желаемая дата</string>
+    <string name="dd_mm_gg">ГГ-ММ-ДД</string>
+    <string name="date_is_wrong">Выбранная дата не валидна</string>
+
+    <!-- Payment Method Fragment strings!!! -->
+    <string name="cash">Наличные</string>
+    <string name="elsom">ЭЛСОМ</string>
+    <string name="card_number">Номер карты</string>
+    <string name="enter_elsom_card_number">Введите номер кошелька Элсом</string>
+
+    <!-- Shipment Method Fragment strings!!! -->
+    <string name="stock">Склад</string>
+    <string name="courier">Курьер</string>
+    <string name="stock_address">Адрес склада</string>
+    <string name="enter_delivery_address">Район, улица, номер дома - Город</string>
+    <string name="shipment_is_restricted">В данный момент доставка не работает</string>
+    <string name="your_address">Ваш адрес</string>
+
+    <!-- Contact Info Fragment strings!!! -->
+    <string name="contact_information">Контактные данные</string>
+    <string name="name">Имя</string>
+    <string name="surname">Фамилия</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="i_agree_with">Я согласен на предоставление персональных данных</string>
+
+    <!-- Desired Date Fragment strings!!! -->
+    <string name="choose_desired_date">Желаемая дата доставки</string>
+
+    <!-- Order Payment Fragment strings!!! -->
+    <string name="order_payment">Оплата заказа</string>
+    <string name="Cancel">Отменить</string>
+    <string name="pressing_pay_button">Нажмите на кнопку «Оплатить в ЭЛСОМ». Вы будете перенаправлены на страницу ЭЛСОМ для оплаты этого счёта.</string>
+    <string name="elsom_payment">Оплатить в ЭЛСОМ</string>
+    <string name="in_basket">В корзине</string>
+
+    <!-- Summary Fragment strings!!! -->
+    <string name="confirm_payment_fragment_name">Подтверждение заказа </string>
+    <string name="confirm_payment">Подтвердить заказ</string>
+    <string name="order_list">Список продуктов </string>
+    <string name="could_not_get_url">Не удалось подключиться к Элсом!</string>
+
+
+    <!-- Search Filter Fragment strings!!! -->
+    <string name="search_filter">Поисковой фильтр</string>
+    <string name="clean">Очистить</string>
+    <string name="category">Категория</string>
+    <string name="select_category">Выберите категорию</string>
+    <string name="select_category_2">Выбор категории</string>
+    <string name="location">Местоположение</string>
+    <string name="select_location">Выберите местоположение</string>
+    <string name="price">Цена</string>
+    <string name="from">От</string>
+    <string name="until">До</string>
+    <string name="filtration">Сортировать</string>
+    <string name="by_default">По умолчанию</string>
+    <string name="by_new">Новые</string>
+    <string name="by_cheap">Дешевые</string>
+    <string name="by_high_cost">Дорогие</string>
+    <string name="agreement">Я согласен на предоставление персональных данных</string>
+    <string name="som">\u00A0сом</string>
+    <string name="kg">\u00A0/ кг</string>
+    <string name="bishkek">Бишкек</string>
+    <string name="batken">Баткенская область</string>
+    <string name="jalal_abad">Джалал-Абадская область</string>
+    <string name="yssyk_kol">Иссык-Кульская область</string>
+    <string name="naryn">Нарынская область</string>
+    <string name="osh">Ошская область</string>
+    <string name="talas">Таласская область</string>
+    <string name="chuy">Чуйская область</string>
+
+    <!-- Registration Fragment -->
+    <string name="registration">Регистрация</string>
+    <string name="lastName">Фамилия</string>
+    <string name="phoneNumber">Номер телефона</string>
+    <string name="password">Пароль</string>
+    <string name="next">Далее</string>
+    <string name="confirm_order">Подтвердить заказ</string>
+    <string name="login">Войти</string>
+    <string name="login_2">Вход</string>
+    <string name="no_internet_connection">Вы не подключены к серверу!</string>
+    <string name="duplicated">Такой пользователь зарегистрирован</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="too_short_string">Слишком короткий код верификации</string>
+    <string name="wrong_password">Неверно введен номер или пароль</string>
+    <string name="phone_number_format">Формат номера телефона не верна</string>
+    <string name="phone_number_format_2">Номер телефона должна начинаться на +996</string>
+    <string name="password_security_warning">Пароль должен содержать хотя бы 1 букву и 1 цифру</string>
+
+    <!-- Authorization Fragment -->
+    <string name="code_authorization">Код авторизации</string>
+    <string name="enter_code">Введите код</string>
+    <string name="sms_send">СМС-код отправлен на Ваш номер</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="authorization">Авторизация</string>
+    <string name="code_is_invalid">Неверный код авторизации</string>
+    <string name="user_not_found">Такой пользователь не зарегистрирован</string>
+    <string name="successful_login">Вы успешно авторизовались</string>
+    <string name="successful_register">Вы успешно зарегистрировались</string>
+    <string name="password_format">Пароль слишком короткий</string>
+    <string name="not_right_code">Неверный код авторизации</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile">Профиль</string>
+    <string name="current_order">Текущие заказы</string>
+    <string name="purchase_history">История покупок</string>
+    <string name="about_us">О нас</string>
+    <string name="faq">Часто задаваемые вопросы </string>
+    <string name="contacts">Контакты</string>
+    <string name="information">Справочная информация</string>
+    <string name="exit">Выход</string>
+    <string name="sure_to_exit">Вы действительно хотите выйти?</string>
+    <string name="stay">Остаться</string>
+
+    <string name="about_us_info">Мы -  группа  единомышленников, действующая с  2017года. В нашей группе Telegram  более 1300 участников: потребителей и производителей экологически чистых продуктов питания.</string>
+    <string name="about_us_mission"><b>Наша миссия</b> - оздоровление нации, взаимопомощь, сотрудничество и рост.</string>
+    <string name="about_app_tv1">Мы помогаем потребителям здоровой пищи выбирать и заказывать свежие, экологически чистые продукты питания по приемлемым ценам напрямую от производителей (фермеров, крестьянских хозяйств, частных угодий и др.), не выходя из дома или офиса. </string>
+    <string name="about_app_tv2">Мы помогаем производителям экологически чистых продуктов питания реализовывать свою продукцию напрямую потребителям здоровой пищи, без посредников, лишних затрат и потери времени.</string>
+    <string name="about_app_tv3">О приложении “Organic in KG”</string>
+    <string name="about_app_tv4">Электронная торговая площадка “Organic in KG” создана для прямых поставок экологически чистых органических продуктов питания от производителя потребителю.</string>
+    <string name="tv1">Для потребителя экологически чистых продуктов питания</string>
+    <string name="tv2">приложение дает возможность: выбирать производителей продуктов питания по регионам и категориям товаров; выбирать и заказывать качественные продукты питания по приемлемым ценам, экономить время при покупке продуктов питания; получать гарантированно свежие продукты, выращенные без химикатов на органической основе;  потреблять полезную и здоровую пищу; производить оплату за заказ через электронную систему платежей ЭЛСОМ или наличными при получении заказа; оценивать качество продукции и услуги по её доставке.</string>
+    <string name="tv3">Для производителей экологически чистых продуктов питания  </string>
+    <string name="tv4">приложение дает возможность: напрямую реализовывать товары по выгодным  ценам, с минимальными контактами с людьми в условиях пандемии, в любое время года;  получать гарантированную прибыль и планировать собственную деятельность в перспективе; развивать свой бизнес и создавать дополнительные рабочие места.</string>
+
+    <!-- Profile Settings Fragment -->
+    <string name="profile_settings">Настройки профиля</string>
+    <string name="tap_to_change_picture">Нажмите чтобы изменить фотографию</string>
+    <string name="change_name">Изменить имя</string>
+    <string name="change_lastname">Изменить фамилию</string>
+    <string name="change_number">Изменить телефон</string>
+    <string name="delivery_address">Адрес доставки</string>
+    <string name="change_middle_name">Изменить отчество</string>
+    <string name="enter_email">Введите email</string>
+    <string name="email">Email</string>
+    <string name="save">Сохранить</string>
+
+    <!-- Pending/Closed Orders Fragment -->
+    <string name="you_are_not_logged_in">Вы не авторизованы!</string>
+    <string name="some_products_have_been_deleted">Некоторые товары были удалены из базы данных!</string>
+
+    <!-- ELSOM -->
+    <string name="unique_transaction_number">Уникальный номер транзакции</string>
+    <string name="elsom_number_format">Номер кошелька должна состоять из 10 цифр</string>
+    <string name="elsom_number_format_2">Номер кошелька должна начинаться на 0</string>
+    <string name="elsom_number_format_3">Поскольку, вы выбрали товар не в валюте COM, вы не сможете оплатить заказ через Элсом</string>
+
+
+    <string name="no_internet">Нет соединения с интернетом</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Главная</string>
+    <string name="categories">Категории</string>
+    <string name="basket">Корзина</string>
+    <string name="search">Поиск</string>
+    <string name="buy">Купить</string>
+    <string name="to_cart">В корзину</string>
+    <string name="empty_cart">У вас отсуствуют текущие заказы</string>
+    <string name="empty_history_cart">У вас отсуствуют истории заказов</string>
+    <string name="go_to_main">Перейти на главную</string>
+    <string name="empty_history">У вас отсутсвует история покупок</string>
+    <string name="cart_is_empty">Ваша корзина пуста</string>
+    <string name="select">Выбрать</string>
+    <string name="buy_product">Оформить заказ</string>
+    <string name="product_description">Описание товара: </string>
+    <string name="feedbacks">Отзывы</string>
+    <string name="leave_feedback">Оставить отзыв</string>
+    <string name="feedback">Отзыв</string>
+    <string name="error">Произошла ошибка!</string>
+    <string name="cannot_leave_feedback">У вас нет возможности оставить отзыв под данным товаром</string>
+    <string name="understand">Понятно</string>
+    <string name="rate_product">Оцените товар</string>
+    <string name="not_all_fields_filled">Не все поля заполнены</string>
+    <string name="tomorrow_this_item_can_be_sold">Завтра этого товара может и не быть</string>
+    <string name="sure_to_cancel_order">Вы действительно хотите отменить заказ?</string>
+    <string name="invalid_password_or_number">Неверно введен номер или пароль</string>
+    <string name="location_filtration">Выбор Местоположения</string>
+    <string name="was_purchased">Куплено товара:</string>
+    <string name="min_to_buy">Минимальный закуп:</string>
+    <string name="if_want_to_verify_sms">Нажмите, чтобы ввести СМС код</string>
+    <string name="name_surname">ФИО</string>
+    <string name="address">Адрес</string>
+    <string name="shipment_price">Стоимость доставки по Бишкеку\u00A0</string>
+    <string name="hint">*****</string>
+    <string name="autorized_user_have_text_1">Так же у зарегестрированных пользователей есть возможность проверить номер заказа в личном профиле пользователя.</string>
+    <string name="not_defined">Не указано</string>
+    <string name="more_details">Подробнее…</string>
+    <string name="kilograms">/ кг</string>
+    <string name="ordered">Заказ оформлен</string>
+    <string name="empty">Пока пусто</string>
+    <string name="request_not_found">По вашему запросу ничего не найдено</string>
+    <string name="e_store">Интернет-магазин органической продукции</string>
+    <string name="password_must_contain">Пароль должен содержать не менее одной заглавной буквы, цифры и символа</string>
+    <string name="navigate_to_settings">Перейдите в настройки чтобы внести данные</string>
+    <string name="in_kg">in KG</string>
+    <string name="organic">organic</string>
+    <string name="neobis">Разработан компанией Neobis</string>
+    <string name="total_price">Итого:</string>
+    <string name="_996">+996</string>
+    <string name="enter_your_name">Введите имя</string>
+    <string name="enter_your_surname">Введите фамилию</string>
+    <string name="enter_your_otech">Введите отчество</string>
+    <string name="xx">XX</string>
+    <string name="done">Готово</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="no_feedbacks">Отзывов на данный товар нет</string>
+
+
+</resources>

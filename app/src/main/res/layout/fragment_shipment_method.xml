@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".ui.order.ShipmentMethodFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/shipment_method_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/shipment_method_fragment_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundColor"
+                android:src="@drawable/ic_back_button" />
+
+            <TextView
+                android:id="@+id/shipment_method_fragment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_shipment_method"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/shipment_method_fragment_back_button"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/shipment_method_fragment_text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="7dp"
+                        android:text="@string/stock"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/colorBlack"/>
+
+                    <TextView
+                        android:layout_below="@id/shipment_method_fragment_text_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/courier"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/colorBlack"/>
+
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/shipment_method_fragment_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <RadioButton
+                        android:id="@+id/shipment_method_fragment_radioButton_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/colorAccent" />
+
+                    <RadioButton
+                        android:id="@+id/shipment_method_fragment_radioButton_courier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:buttonTint="@color/colorAccent"/>
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="22dp"
+                android:text="@string/your_address"
+                android:textSize="16sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/shipment_method_fragment_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/edit_text_frame_background"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:hint="@string/enter_delivery_address"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:ems="10"
+                android:inputType="text"
+                android:singleLine="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/shipment_method_fragment_shipment_price_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/shipment_price"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/shipment_method_fragment_shipment_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/shipment_method_fragment_shipment_price_text"
+                    android:fontFamily="@font/open_sans"
+                    android:hint="XX"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/shipment_method_fragment_shipment_price"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/som"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/shipment_method_fragment_save_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="15dp"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shipment_method_fragment_save_button"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/shipment_method_fragment_hidden_alert_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_alert_20"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/shipment_method_fragment_hidden_alert_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/shipment_method_fragment_hidden_alert_icon"
+                        android:text="@string/not_all_fields_filled"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/colorRed"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

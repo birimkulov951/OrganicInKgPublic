@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginEnd="@dimen/margin_medium"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/about_us_item_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        tools:text = "@string/about_us"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/small"/>
+    <TextView
+        android:id="@+id/about_us_item_paragraph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/colorBlack"
+        android:layout_marginBottom="@dimen/small"
+        tools:text = "@string/about_us_info"
+      />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".ui.CategoriesFragment">
+
+   <RelativeLayout
+       android:id="@+id/categories_fragment_relative_layout"
+       android:layout_width="match_parent"
+       android:layout_height="?attr/actionBarSize"
+       android:layout_marginStart="@dimen/layout_margin"
+       android:layout_marginEnd="@dimen/layout_margin">
+
+      <ImageView
+          android:id="@+id/categories_fragment_filter_button"
+          android:layout_width="40dp"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginStart="@dimen/margin_small"
+          android:src="@drawable/ic_filter"
+          tools:ignore="ContentDescription" />
+
+      <EditText
+          android:id="@+id/categories_edit_text_search"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/open_sans_semibold"
+          android:layout_centerVertical="true"
+          android:textSize="15sp"
+          android:textColor="@color/colorPrimary"
+          android:layout_toStartOf="@id/categories_fragment_filter_button"
+          android:background="@drawable/edit_text_search_background"
+          android:paddingStart="38dp"
+          android:paddingEnd="5dp"
+          android:imeOptions="actionSearch"
+          android:maxLines="1"
+          android:singleLine="true"
+          android:inputType="text"
+          android:hint="@string/search"
+          tools:ignore="Autofill" />
+
+      <ImageView
+          android:id="@+id/search_icon"
+          android:src="@drawable/ic_baseline_search_24"
+          android:layout_centerVertical="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:paddingStart="@dimen/small"
+          android:paddingEnd="@dimen/small"
+          android:layout_marginTop="@dimen/margin_medium"
+          tools:ignore="ContentDescription" />
+
+   </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/categories_fragment_relative_layout">
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/categories_recyclerview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:listitem="@layout/categories_list_item"
+          android:layoutAnimation="@anim/layout_slide_right"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+      <ProgressBar
+          android:id="@+id/categories_fragment_progressbar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/categories_fragment_is_empty_text"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="20dp"
+          android:text="@string/empty"
+          android:textSize="14sp"
+          android:fontFamily="@font/open_sans"
+          android:textColor="@color/colorBlack"
+          android:gravity="center"
+          android:visibility="gone"/>
+
+   </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <!-- Container layout -->
+    <fragment
+        android:id="@+id/fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav"
+        android:layout_above="@id/main_activity_relative_layout_2"
+        tools:ignore="FragmentTagUsage" />
+
+    <!-- Custom Toasts -->
+
+    <TextView
+        android:id="@+id/main_activity_basket_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="BASKET MESSAGE"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/main_activity_text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="TOAST MESSAGE"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/main_activity_relative_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <!-- Bottom Navigation Bar app:labelVisibilityMode="labeled" -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_nav_bar_design"
+            android:theme="@style/OpenSansSemiBold"
+            app:elevation="1dp"
+            app:menu="@menu/bottom_nav_bar_menu"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

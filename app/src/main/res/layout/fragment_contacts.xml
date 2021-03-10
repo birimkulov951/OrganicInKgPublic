@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.profile.ContactsFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contacts_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/contacts_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:src="@drawable/ic_back_button"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/contacts_back_button"
+                android:text="@string/contacts"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="Телефон для справок: "
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/contacts_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="+996 709 660 774"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"/>
+
+    <TextView
+        android:id="@+id/contacts_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginTop="30dp"
+        android:text="Мы находимся по адресу:"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/contacts_address_street"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:textSize="15sp"
+        android:textColor="@color/colorBlack"
+        android:text="Малдыбаева 3/3 (пер. Джаманбаева)"/>
+
+    <TextView
+        android:id="@+id/contacts_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginTop="30dp"
+        android:text="e-mail:"
+        android:textSize="16sp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:id="@+id/contacts_gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlack"
+        android:text="organicinkg@gmail.com"/>
+
+
+</LinearLayout>

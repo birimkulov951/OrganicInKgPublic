@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".ui.order.ContactInfoFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/contact_info_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/contact_info_fragment_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundColor"
+                android:src="@drawable/ic_back_button" />
+
+            <TextView
+                android:id="@+id/contact_info_fragment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_information"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/contact_info_fragment_back_button"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/contact_info_fragment_toolbar">
+
+        <ProgressBar
+            android:id="@+id/contact_info_fragment_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_info_fragment_toolbar">
+
+        <LinearLayout
+            android:id="@+id/contact_info_fragment_contact_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+
+                <EditText
+                    android:id="@+id/contact_info_fragment_contact_name"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/edit_text_frame_background"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:hint="@string/name"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/contact_info_fragment_contact_surname"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/edit_text_frame_background"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:hint="@string/surname"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/contact_info_fragment_contact_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edit_text_frame_background"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="@string/phone_number"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/open_sans_semibold"
+                android:ems="10"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/contact_info_fragment_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/colorAccent" />
+
+                <TextView
+                    android:layout_toEndOf="@+id/contact_info_fragment_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="@string/i_agree_with"
+                    android:fontFamily="@font/open_sans"
+                    android:textSize="14sp"
+                    android:textColor="@color/appTextGrayColor"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/contact_info_fragment_next_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:text="@string/next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_info_fragment_next_btn"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:id="@+id/contact_info_fragment_hidden_alert_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_alert_20"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/contact_info_fragment_hidden_alert_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_small"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/contact_info_fragment_hidden_alert_icon"
+                        android:text="@string/not_all_fields_filled"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/open_sans"
+                        android:textColor="@color/colorRed"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

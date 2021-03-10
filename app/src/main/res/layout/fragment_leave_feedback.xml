@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".ui.LeaveFeedbackFragment">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/faq_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/leave_feedback_back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/layout_margin"
+                android:src="@drawable/ic_back_button"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/leave_feedback_back_button"
+                android:text="@string/leave_feedback"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/layout_margin"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/appTextGrayColor2">
+            <ImageView
+                android:id="@+id/feedback_image_view"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/placeholder_image"/>
+            <ImageView
+                android:id="@+id/loc_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="@dimen/small"
+                android:src="@drawable/ic_baseline_location_on_24"
+                android:layout_toEndOf="@id/feedback_image_view"
+                android:layout_below="@id/feedback_product_name"/>
+
+            <TextView
+                android:id="@+id/feedback_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Морковка"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/open_sans_semibold"
+                android:layout_toEndOf="@id/feedback_image_view"/>
+            <TextView
+                android:id="@+id/feedback_product_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback_product_name"
+                android:layout_toEndOf="@id/loc_icon"
+                android:layout_marginTop="3dp"
+                android:text="Нарынская область"
+                android:textSize="13sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_marginStart="@dimen/large"
+     android:layout_marginEnd="@dimen/layout_margin"
+     android:layout_marginBottom="@dimen/margin_medium">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_product"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="16sp"
+        android:layout_marginTop="@dimen/large" />
+
+     <RatingBar
+         android:id="@+id/rating"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         style="@style/Widget.AppCompat.RatingBar.Small"
+         android:layout_marginTop="@dimen/margin_medium"
+         android:numStars="5"
+         android:stepSize="1"
+         android:isIndicator="false"
+         android:secondaryProgressTint="@color/colorOrange"
+         android:progressTint="@color/colorOrange"/>
+
+     <EditText
+        android:id="@+id/leave_feedback_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Комментарий"
+        android:fontFamily="@font/open_sans_semibold"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:textSize="15sp"
+        android:background="@drawable/registration_frame_background2"
+        android:layout_marginTop="@dimen/layout_margin" />
+     <Button
+         android:id="@+id/leave_feedback_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/leave_feedback"
+         android:textAllCaps="false"
+         android:background="@drawable/button_background"
+         android:textColor="@color/appTextGrayColor2"
+         android:fontFamily="@font/open_sans_semibold"
+         android:layout_gravity="center"
+         android:layout_marginTop="@dimen/large"
+         android:textSize="14sp"
+         android:layout_marginBottom="@dimen/layout_margin"/>
+
+ </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

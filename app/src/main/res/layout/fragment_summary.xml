@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    tools:context=".ui.order.SummaryFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/summary_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/summary_fragment_back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/backgroundColor"
+                android:src="@drawable/ic_back_button" />
+
+            <TextView
+                android:id="@+id/summary_fragment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_payment_fragment_name"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_toEndOf="@id/summary_fragment_back_btn"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@+id/summary_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/summary_fragment_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/summary_fragment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_make_invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/order_list"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorBlack" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/summary_fragment_product_make_invisible_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Название"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/price"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_1"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_2"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_3"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_4"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_5"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_6"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_7"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_8"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_9"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_name_10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:ems="1"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:textColor="@color/colorBlack"
+                    android:visibility="gone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/summary_fragment_product_price_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:visibility="gone"
+                    android:textColor="@color/colorOrange"/>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/summary_fragment_product_make_invisible_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Доставка:"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/summary_fragment_shipment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="нет"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorOrange" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/summary_fragment_product_make_invisible_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Валюта:"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/summary_fragment_currency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="сом"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/summary_fragment_product_make_invisible_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Итого:"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:id="@+id/summary_fragment_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XX"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:textColor="@color/colorOrange" />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp">
+
+                <Button
+                    android:id="@+id/summary_fragment_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/confirm_payment"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/open_sans_semibold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
